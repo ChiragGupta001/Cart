@@ -1,0 +1,20 @@
+{
+  "SerializedFilePath": "d:\\A\\Cart\\CartApi\\CartApi\\Core_Test_Bal\\obj\\Debug\\net6.0\\project.razor.json",
+  "FilePath": "d:\\A\\Cart\\CartApi\\CartApi\\Core_Test_Bal\\Core_Test_Bal.csproj",
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 1000
+  },
+  "RootNamespace": null,
+  "Documents": [],
+  "SerializationFormat": "0.3"
+}

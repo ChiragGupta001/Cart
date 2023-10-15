@@ -1,0 +1,71 @@
+D:\core\Core_Test_Api\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.deps.json
+D:\core\Core_Test_Api\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.runtimeconfig.json
+D:\core\Core_Test_Api\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.dll
+D:\core\Core_Test_Api\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.pdb
+D:\core\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.csproj.AssemblyReference.cache
+D:\core\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.GeneratedMSBuildEditorConfig.editorconfig
+D:\core\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.AssemblyInfoInputs.cache
+D:\core\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.AssemblyInfo.cs
+D:\core\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.csproj.CoreCompileInputs.cache
+D:\core\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.dll
+D:\core\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\refint\Core_Test_Dal.dll
+D:\core\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.pdb
+D:\core\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.genruntimeconfig.cache
+D:\core\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\ref\Core_Test_Dal.dll
+C:\Users\archi\Downloads\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.deps.json
+C:\Users\archi\Downloads\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.runtimeconfig.json
+C:\Users\archi\Downloads\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.dll
+C:\Users\archi\Downloads\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.pdb
+C:\Users\archi\Downloads\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.csproj.AssemblyReference.cache
+C:\Users\archi\Downloads\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\archi\Downloads\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.AssemblyInfoInputs.cache
+C:\Users\archi\Downloads\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.AssemblyInfo.cs
+C:\Users\archi\Downloads\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.csproj.CoreCompileInputs.cache
+C:\Users\archi\Downloads\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.dll
+C:\Users\archi\Downloads\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\refint\Core_Test_Dal.dll
+C:\Users\archi\Downloads\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.pdb
+C:\Users\archi\Downloads\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.genruntimeconfig.cache
+C:\Users\archi\Downloads\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\ref\Core_Test_Dal.dll
+D:\A\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.deps.json
+D:\A\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.runtimeconfig.json
+D:\A\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.dll
+D:\A\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.pdb
+D:\A\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.csproj.AssemblyReference.cache
+D:\A\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.GeneratedMSBuildEditorConfig.editorconfig
+D:\A\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.AssemblyInfoInputs.cache
+D:\A\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.AssemblyInfo.cs
+D:\A\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.csproj.CoreCompileInputs.cache
+D:\A\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.dll
+D:\A\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\refint\Core_Test_Dal.dll
+D:\A\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.pdb
+D:\A\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.genruntimeconfig.cache
+D:\A\Core_Test_Api (1)\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\ref\Core_Test_Dal.dll
+D:\A\Cart\CartApi\Core_Test_Api\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.deps.json
+D:\A\Cart\CartApi\Core_Test_Api\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.runtimeconfig.json
+D:\A\Cart\CartApi\Core_Test_Api\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.dll
+D:\A\Cart\CartApi\Core_Test_Api\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.pdb
+D:\A\Cart\CartApi\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.csproj.AssemblyReference.cache
+D:\A\Cart\CartApi\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.GeneratedMSBuildEditorConfig.editorconfig
+D:\A\Cart\CartApi\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.AssemblyInfoInputs.cache
+D:\A\Cart\CartApi\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.AssemblyInfo.cs
+D:\A\Cart\CartApi\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.csproj.CoreCompileInputs.cache
+D:\A\Cart\CartApi\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.dll
+D:\A\Cart\CartApi\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\refint\Core_Test_Dal.dll
+D:\A\Cart\CartApi\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.pdb
+D:\A\Cart\CartApi\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.genruntimeconfig.cache
+D:\A\Cart\CartApi\Core_Test_Api\Core_Test_Dal\obj\Debug\net6.0\ref\Core_Test_Dal.dll
+D:\A\Cart\CartApi\CartApi\Core_Test_Dal\bin\Debug\net6.0\NOTICE.TXT
+D:\A\Cart\CartApi\CartApi\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.deps.json
+D:\A\Cart\CartApi\CartApi\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.runtimeconfig.json
+D:\A\Cart\CartApi\CartApi\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.dll
+D:\A\Cart\CartApi\CartApi\Core_Test_Dal\bin\Debug\net6.0\Core_Test_Dal.pdb
+D:\A\Cart\CartApi\CartApi\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.csproj.AssemblyReference.cache
+D:\A\Cart\CartApi\CartApi\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.GeneratedMSBuildEditorConfig.editorconfig
+D:\A\Cart\CartApi\CartApi\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.AssemblyInfoInputs.cache
+D:\A\Cart\CartApi\CartApi\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.AssemblyInfo.cs
+D:\A\Cart\CartApi\CartApi\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.csproj.CoreCompileInputs.cache
+D:\A\Cart\CartApi\CartApi\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.dll
+D:\A\Cart\CartApi\CartApi\Core_Test_Dal\obj\Debug\net6.0\refint\Core_Test_Dal.dll
+D:\A\Cart\CartApi\CartApi\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.pdb
+D:\A\Cart\CartApi\CartApi\Core_Test_Dal\obj\Debug\net6.0\Core_Test_Dal.genruntimeconfig.cache
+D:\A\Cart\CartApi\CartApi\Core_Test_Dal\obj\Debug\net6.0\ref\Core_Test_Dal.dll
