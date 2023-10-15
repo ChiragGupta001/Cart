@@ -1,0 +1,8 @@
+<nav class="navbar navbar-light bg-light justify-content-between">
+    <a class="navbar-brand mx-5"></a>
+    <form class="form-inline mx-5"  *ngIf="loger" >
+      <img [src] = "Profile" class = "profile" (click)="EditUser()" >
+      <button class="btn btn-primary mr-sm-2" (click)="logOut()">logOut</button>
+    </form>
+  </nav>
+<router-outlet></router-outlet>

@@ -1,0 +1,60 @@
+
+<main class="add">
+    <h3 class="page-title add mb-4">Add Product</h3>
+    <form class="" [formGroup]="addNewItem" (ngSubmit)="AddItem(addNewItem.value)">
+
+        <div class="form-group">
+            <label>ItemName</label>
+            <input [class.is-invalid]="ItemName.invalid && ItemName.touched" formControlName="Name" type="text" class="form-control add">
+            <div *ngIf="ItemName.invalid && ItemName.touched">
+                <small *ngIf="ItemName.errors?.['required']" class="text-danger add">Item name is required</small>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Image</label>
+            <img [src]="url" [class.d-none]="!isurl" style="width: 200px;height: 200px;">
+            <input [class.is-invalid]="itemImage.invalid && itemImage.touched" formControlName="Image" type="file"  (change)="handleFileInput($event)"  accept="images/*" class="form-control add">
+            <div *ngIf="itemImage.invalid && itemImage.touched">
+                <small *ngIf="itemImage.errors?.['required']" class="text-danger add">Image is required</small>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Description</label>
+            <textarea [class.is-invalid]="itemDesc.invalid && itemDesc.touched" formControlName="Description" type="" class="form-control add"></textarea>
+            <div *ngIf="itemDesc.invalid && itemDesc.touched">
+                <small *ngIf="itemDesc.errors?.['required']" class="text-danger add">Description is required</small>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Category</label>
+            <input [class.is-invalid]="itemCategory.invalid && itemCategory.touched" formControlName="Category" type="text" class="form-control add">
+            <div *ngIf="itemCategory.invalid && itemCategory.touched">
+                <small *ngIf="itemCategory.errors?.['required']" class="text-danger add">Category is required</small>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Quantity</label>
+            <input [class.is-invalid]="itemQuantity.invalid && itemQuantity.touched" formControlName="Quantity" 
+                type="number" class="form-control add">
+            <div *ngIf="itemQuantity.invalid && itemQuantity.touched">
+                <small *ngIf="itemQuantity.errors?.['required']" class="text-danger add">quantity is required</small>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Price</label>
+            <input [class.is-invalid]="itemPrice.invalid && itemPrice.touched" formControlName="Price" type="number" 
+                class="form-control add">
+            <div *ngIf="itemPrice.invalid && itemPrice.touched">
+                <small *ngIf="itemPrice.errors?.['required']" class="text-danger add">price is required </small>
+            </div>
+        </div>
+
+        <button [disabled]="addNewItem.invalid" type="submit" class="btn btn-primary add mt-3">Add Item</button>
+        <button class="btn btn-secondary add" (click)="goBack()">Back</button>
+    </form>
+</main>

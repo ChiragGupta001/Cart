@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <form [formGroup]="EditProfilePic" (ngSubmit)="EditProfile()">
+        <div>
+            <input type="file" formControlName="Profile" class="user-input form-control" (change)="onFileChange($event)" accept="images/*" >
+        </div>
+        <div>
+            <div class="col-md-8">
+                <image-cropper 
+                  #cropper
+                  [imageChangedEvent]="imgChangeEvt" 
+                  [maintainAspectRatio]="true" 
+                  [aspectRatio]="4 / 4"
+                  [resizeToWidth]="300" 
+                  format="png"
+                  (imageCropped)="cropImg($event)" 
+                  (imageLoaded)="imgLoad()"
+                  (cropperReady)="initCropper()" 
+                  (loadImageFailed)="imgFailed()"
+                  >
+                </image-cropper>
+              </div>
+              <div class="col-md-4">
+                <h6>Image Preview</h6>
+                <img [src]="cropImgPreview" />
+              </div>
+        </div>
+        <div>
+            <p-button type="submit" label="Edit" class="p-button-primary mt-3 ms-3"></p-button>
+            <p-button class="p-button-secondary mt-3 ms-2" (click)="goBack()">Back</p-button>
+        </div>
+    </form>
+    </div>
+</div>

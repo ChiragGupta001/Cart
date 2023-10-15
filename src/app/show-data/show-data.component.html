@@ -1,0 +1,143 @@
+<div *ngIf="loader" class="spinner loader">
+    <p-progressSpinner styleClass="w-4rem h-4rem" strokeWidth="8" fill="var(--surface-ground)" animationDuration=".9s"></p-progressSpinner>
+</div>
+
+<div *ngIf="role === 'Admin'" class="container">
+
+    <div class="card" *ngIf="!loader">
+        <p-table 
+        #dt1 
+        [value]="products" 
+        dataKey="id" 
+        [rows]="2"
+        [showCurrentPageReport]="true"
+        currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+        [globalFilterFields]="['id', 'name', 'description', 'category', 'quantity', 'price']"
+        >
+        
+            <ng-template pTemplate="caption">
+                <div class="flex justify-content-center align-items-center">
+                    <span class="ms-4">
+                        <input pInputText pKeyFilter="int" placeholder="PageSize" (keyup.enter)="PagesizeData($any($event.target).value);" class="p-2 ms-4" />
+                    </span>
+                    <span class="p-input-icon-right AddMargin">
+                        <i class="pi pi-search"></i>
+                        <input type="text" pInputText (input)="search($any($event.target).value)" class="p-2" />
+                    </span>
+                    <p-button *ngIf="role === 'Admin'" styleClass="p-button-primary ms-3" routerLink="addItem" label="Add Product"></p-button>
+                    <p-button label="Download" styleClass="p-button-secondary ms-3" (click)="downloadFile()"></p-button>
+                    <p-button label="Choose" styleClass="p-button-secondary ms-3" (click)="Extractfile()"></p-button>
+
+
+                    <!-- <p-fileUpload mode="basic" chooseLabel="Choose" name="demo[]" url="https://www.primefaces.org/cdn/api/upload.php" accept="image/*" maxFileSize="1000000" (onUpload)="onUpload($event)"></p-fileUpload> -->
+
+                    <!-- <form action=""> -->
+                    <!-- <input type="file" name="chooseFile" accept=".xls/" ng-dblclick="Extractfile()"> -->
+                    <!-- <button type="submit"></button> -->
+                    <!-- </form> -->
+
+                    <!-- <p-fileUpload mode="basic" name="demo[]" maxFileSize="1000000" (onUpload)="onBasicUploadAuto($any($event))" chooseLabel="Browse"></p-fileUpload> -->
+                    <!-- <p-fileUpload mode="basic" name="demo[]" accept="image/*" maxFileSize="1000000" (onUpload)="onBasicUploadAuto($event)" [auto]="true" chooseLabel="Browse"></p-fileUpload> -->
+
+
+                    <!-- <p-fileUpload mode="basic" name="demo[]" url="https://www.primefaces.org/cdn/api/upload.php" accept="image/*" maxFileSize="1000000" (onUpload)="onBasicUploadAuto($event)" [auto]="true" chooseLabel="Browse"></p-fileUpload> -->
+                    
+                    
+                    
+                    <!-- <i class="pi pi-search"></i>
+                    <div class="p-input-icon-left ms-4">
+                        <input type="text" pInputText placeholder="Global Search"
+                            (input)="search($any($event.target).value)" />
+                    </div> -->
+
+                    <!-- <div class="p-input-icon-right AddMargin">
+                        <input type="number" class="" #pageSize pInputtext placeholder="PageSize"
+                            (keyup.enter)="PagesizeData($any($event.target).value); pageSize.value='' ">
+                    </div> -->
+                    
+                    <!-- <p-button type="button" class="ms-4 btn-primary" (click)="downloadFile()">Download</p-button> -->
+                </div>
+            </ng-template>
+
+            <ng-template pTemplate="header">
+                <tr>
+                    <!-- <th pSortableColumn="id">Id<p-sortIcon field="id"
+                            (click)="sort(issort = !issort,'id')"></p-sortIcon></th> -->
+                    <th pSortableColumn="name">Name<p-sortIcon field="name"
+                            (click)="sort(issort = !issort,'name')"></p-sortIcon></th>
+                    <th>Image</th>
+                    <th pSortableColumn="description">Description<p-sortIcon field="description"
+                            (click)="sort(issort = !issort,'description')"></p-sortIcon></th>
+                    <th pSortableColumn="category">Category<p-sortIcon field="category"
+                            (click)="sort(issort = !issort,'category')"></p-sortIcon></th>
+                    <th pSortableColumn="quantity">Quantity</th>
+                    <th pSortableColumn="price">Price<p-sortIcon field="price"
+                            (click)="sort(issort = !issort,'price')"></p-sortIcon></th>
+                    <th pSortableColumn="action">Action</th>
+                </tr>
+            </ng-template>
+
+            <ng-template pTemplate="body" let-item>
+                <tr>
+                    <!-- <td>{{}}</td> -->
+                    <td>{{item.name}}</td>
+                    <td><img [src]='item.image' alt="image" height="150" width="200"></td>
+                    <td>{{item.description}}</td>
+                    <td>{{item.category}}</td>
+                    <td>{{item.quantity}}</td>
+                    <td>{{item.price}}</td>
+                    <td>
+                        <p-button class="mt-2" (click)="DetailItem(item)">Detail</p-button>
+                        <p-button class="ms-1 mt-2" (click)="EditItem(item)">Edit</p-button>
+                        <p-button class="ms-1 mt-2" (click)="DeleteItem(item)">Delete</p-button>
+                    </td>
+                </tr>
+            </ng-template>
+
+            <ng-template pTemplate="summary">
+                <button class="btn btn-info me-2 ms-4" (click)="previous()">Prev</button>
+                <span>{{pageNumber}}</span>
+                <button class="btn btn-info ms-2 me-2" (click)="next()">Next</button>
+                <span class="ps-2">Total Page: {{totalPage}}</span>
+            </ng-template>
+
+        </p-table>
+    </div>
+</div>
+
+
+<div *ngIf="role === 'User'" class="container">
+    <div *ngIf="!loader">
+    <div class="flex justify-content-end align-items-center border-1 p-4">
+        <i class="pi pi-search"></i>
+        <div class="p-input-icon-left ms-1">
+            <input type="text" pInputText placeholder="Global Search" (input)="search($any($event.target).value)" />
+        </div>
+        <div class="p-input-icon-right AddMargin">
+            <input type="number" class="" #pageSize pInputtext placeholder="PageSize"
+                (keyup.enter)="PagesizeData($any($event.target).value); pageSize.value='' ">
+        </div>
+    </div>
+    <div class="row">
+        <p-card *ngFor="let item of products" [header]="item.name" [subheader]="item.category" [style]="{ width: '360px'}" class="col-md-4 my-3">
+            <ng-template pTemplate="header">
+                <img alt="Card" [src]="item.image" height="200" />
+            </ng-template>
+            <p>
+                {{item.description}}
+            </p>
+            <h4><b>Quantity: </b>{{item.quantity}}</h4>
+            <h4><b>Price: </b>{{item.price}}</h4>
+            <ng-template pTemplate="footer">
+                <p-button label="Detail" icon="pi pi-check" (click)="DetailItem(item)"></p-button>
+            </ng-template>
+        </p-card>
+    </div>
+    <div>
+        <button class="btn btn-info me-2" (click)="previous()">Prev</button>
+        <span>{{pageNumber}}</span>
+        <button class="btn btn-info ms-2" (click)="next()">Next</button>
+    </div>
+    </div>
+</div>
+<p-toast></p-toast>

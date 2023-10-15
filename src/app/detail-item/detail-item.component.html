@@ -1,0 +1,24 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <p-card header="{{item.name}}" subheader="Product by Apple" [style]="{ width: '360px' }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="{{item.image}}"  height="200" width="200" />
+                </ng-template>
+                <p>
+                    {{item.description}}
+                </p>
+                <p><span>Category : </span>{{item.category}}</p>
+                <p><span>Quantity : </span>{{item.quantity}}</p>
+                <p><span>Price : </span>{{item.price}}</p>
+                <ng-template pTemplate="footer">
+                    <p-toast position="top-right"></p-toast>
+                    <p-confirmDialog [style]="{width: '50vw'}"></p-confirmDialog>
+                    <p-button styleClass="p-button-secondary" (click)="goBack()" label="Back"  [style]="{ 'margin-left': '70%' }" ></p-button>
+                </ng-template>
+            </p-card>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>

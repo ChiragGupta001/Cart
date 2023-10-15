@@ -1,0 +1,76 @@
+<form class="" [formGroup]="SignupForm" (ngSubmit)="signUp(SignupForm.value)">
+    <div class="login-div m-auto">
+        <div class="logo"></div>
+        <div class="title">Signup User</div>
+        <div class="fields">
+
+            <div class="username form-group">
+                <input [class.is-invalid]="userName.invalid && userName.touched" formControlName="UserName" type="text"
+                    class="user-input form-control" placeholder="Username">
+            </div>
+            <small class="text-danger" [class.d-none]="userName.valid || userName.untouched">Username is required</small>
+
+            <div class="username form-group">
+                <input email=true [class.is-invalid]="email.invalid && email.touched" formControlName="Email"
+                    type="email" class="user-input form-control" placeholder="Email">
+            </div>
+            <div *ngIf="email.invalid && email.touched">
+                <small *ngIf="email.errors?.['required']" class="text-danger">Email is required</small>
+                <small *ngIf="email.errors?.['email']" class="text-danger">Enter valid email</small>
+            </div>
+            
+            <div class="username form-group">
+                <input [class.is-invalid]="profile.invalid && profile.touched"  type="file" formControlName="ProfilePic"
+                    class="user-input form-control" (change)="onFileChange($event)"  accept="images/*" >
+            </div>
+
+            <div class="col-md-8">
+                <image-cropper 
+                  #cropper
+                  [imageChangedEvent]="imgChangeEvt" 
+                  [maintainAspectRatio]="true" 
+                  [aspectRatio]="4 / 4"
+                  [resizeToWidth]="300" 
+                  format="png"
+                  (imageCropped)="cropImg($event)" 
+                  (imageLoaded)="imgLoad()"
+                  (cropperReady)="initCropper()" 
+                  (loadImageFailed)="imgFailed()"
+                  >
+                </image-cropper>
+              </div>
+            
+              <!-- <div class="col-md-4">
+                <h6>Image Preview</h6>
+                <img [src]="cropImgPreview" />
+              </div> -->
+
+            <div class="username form-group">
+                <input pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{4,}$"
+                    [class.is-invalid]="password.invalid && password.touched" formControlName="Password" type="password"
+                    class="user-input form-control" placeholder="password">
+            </div>
+            <div *ngIf="password.invalid && password.touched">
+                <small *ngIf="password.errors?.['required']" class="text-danger">password is required</small>
+                <small *ngIf="password.errors?.['pattern']" class="text-danger">password must be strong</small>
+            </div>
+
+            <div class="username form-group">
+                <input [class.is-invalid]="SignupForm.errors?.['misMatch']" formControlName="ConfirmPassword"
+                    type="password" class="user-input form-control" placeholder="ConfirmPassword">
+            </div>
+            <small *ngIf="SignupForm.errors?.['misMatch']" class="text-danger">password must be same </small>
+
+            <div class="password form-group">
+                <input [class.is-invalid]="phoneNo.invalid && phoneNo.touched" formControlName="PhoneNumber" type="tel"
+                    class="pass-input form-control" placeholder="PhoneNumber">
+            </div>
+            <small class="text-danger" [class.d-none]="phoneNo.valid || phoneNo.untouched">phone number is
+                required</small>
+        </div>
+
+        <button type="submit" class="signin-button mb-3">signUp</button>
+        <button type="button" class="signin-button" (click)="gologin()">Login</button>
+
+    </div>
+</form>

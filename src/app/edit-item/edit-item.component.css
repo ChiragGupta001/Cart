@@ -1,0 +1,115 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+::-webkit-scrollbar {
+	width: 0;
+}
+body {
+	background: #d8e9ef;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.account {
+	width: 10%;
+	text-align: right;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+.page-title {
+	padding: 1rem 1rem;
+	color: blue;
+}
+main.add {
+	width: 75vw;
+	max-width: 700px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	align-items: center;
+    text-align: center;
+    /* background-color: rgb(169, 169, 255); */
+    /* border-radius: 8%; */
+}
+
+form {
+	width: 100%;
+}
+label,
+input,
+.weight,
+.image-input {
+	display: block;
+	width: 50%;
+	margin: auto;
+}
+
+label {
+	font-weight: 600;
+	display: flex;
+    justify-content: space-between;
+}
+input.add {
+	padding: 5px;
+	outline: none;
+	/* border: 1px solid black; */
+}
+input:focus,
+select:focus {
+	outline: 1px solid blue;
+}
+.weight {
+	display: flex;
+	justify-content: between;
+}
+.weight input {
+	margin: 0;
+	flex: 1;
+}
+select {
+	display: block;
+	margin-left: 2rem;
+	padding: 0 1rem;
+	outline: none;
+	border: none;
+	background: white;
+}
+.image-input {
+	background: white;
+	display: flex;
+	align-items: center;
+}
+.image-input span:first-child {
+	padding: 1rem;
+	margin-right: 1rem;
+	/* border: 1px solid blue; */
+	cursor: pointer;
+	/* background: blue; */
+	color: white;
+}
+form button {
+	display: block;
+	margin: 1rem auto;
+	width: 50%;
+	padding: 0.5rem 0;
+	color: white;
+	outline: none;
+	border: none;
+	font-weight: 600;
+	background: blue;
+	cursor: pointer;
+}
+@media only screen and (max-width: 800px) {
+	label,
+	input,
+	.weight,
+	.image-input,
+	form button {
+		width: 100%;
+	}
+}
+    
